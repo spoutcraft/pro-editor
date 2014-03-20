@@ -143,7 +143,7 @@ var preParseShape = function() {
 				var texCount = img.width / img.height;
 				for (var i = 0; i < texCount; i++) {
 					textures[textures.length] = new THREE.MeshLambertMaterial({
-						map: THREE.ImageUtils.loadTexture("imageproxy.php?subtex=" + i + "&image=" + img.src)
+						map: THREE.ImageUtils.loadTexture("../img/imageproxy.php?subtex=" + i + "&image=" + img.src)
 					});
 				}
 			}
